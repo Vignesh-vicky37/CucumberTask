@@ -1,0 +1,121 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-20T15:23:17.645Z",
+        "before": [
+          {
+            "result": {
+              "duration": 39340951200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.openBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 59178600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.fullScreen()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1565764300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.applaunch()"
+            }
+          },
+          {
+            "result": {
+              "duration": 8893300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.waits()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "login with invaild details in facebook application",
+        "description": "",
+        "id": "facebook-login;login-with-invaild-details-in-facebook-application",
+        "after": [
+          {
+            "result": {
+              "duration": 831463600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.closingapp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 140152400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user entering email",
+            "match": {
+              "location": "FbDetailsLogin.userEnteringEmail()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 85491700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user entering password",
+            "match": {
+              "location": "FbDetailsLogin.userEnteringPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92120600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click login",
+            "match": {
+              "location": "FbDetailsLogin.userClickLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19491797800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "to validate user present in error page",
+            "match": {
+              "location": "FbDetailsLogin.toValidateUserPresentInErrorPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Facebook login",
+    "description": "",
+    "id": "facebook-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FBloginDetails.feature",
+    "tags": []
+  }
+]
