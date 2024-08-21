@@ -26,7 +26,7 @@ public class TestRunner {
 	@AfterClass
 	public static void toGenarateJvmReport() {
 
-		GenerateJvmReport.report("C:\\Users\\JUJU\\eclipse-workspace\\CucumberTask\\target\\Json Report\\JsonReport.json");
+		GenerateJvmReport.report(System.getProperty("user.dir")+"C\\target\\Json Report\\JsonReport.json");
 			
 	}
 
