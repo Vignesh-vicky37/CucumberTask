@@ -19,7 +19,9 @@ public class FbInvalid extends BaseClass {
 		fl = new FbLoginPage();
 		passTextTOWebElement(fl.getEmailTxtBox(), readParticularcell(bookName, sheetName, 2, 1));
 		System.out.println("hi there");
-
+		System.out.println("1");
+		System.out.println("2");
+System.out.println("3");
 	}
 
 	@When("user entering invaild password in password text box")
