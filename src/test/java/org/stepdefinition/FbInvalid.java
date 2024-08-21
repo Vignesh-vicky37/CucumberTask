@@ -18,6 +18,7 @@ public class FbInvalid extends BaseClass {
 	public void userEnteringInvalidIdInEmailTextBox() throws Exception {
 		fl = new FbLoginPage();
 		passTextTOWebElement(fl.getEmailTxtBox(), readParticularcell(bookName, sheetName, 2, 1));
+		System.out.println("hi there");
 
 	}
 
