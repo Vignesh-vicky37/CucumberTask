@@ -36,6 +36,8 @@ public class FbBothValid extends BaseClass {
 	public void userClickingLoginButton() throws IOException {
 		takeSS("fblogin");
 		clickWebElement(f.getLoginBtn());
+		
+		System.out.println("Hi cucumber task");
 	}
 
 	@Then("User closing the edge browser")
