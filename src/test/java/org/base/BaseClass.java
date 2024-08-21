@@ -191,7 +191,7 @@ public class BaseClass {
 		TakesScreenshot tss = (TakesScreenshot) driver;
 		File source = tss.getScreenshotAs(OutputType.FILE);
 		File destination = new File(
-				"C:\\Users\\JUJU\\eclipse-workspace\\CucumberTask\\ScreenShot\\" + nameofss + ".png");
+				System.getProperty("user.dir")+"\\ScreenShot\\" + nameofss + ".png");
 		FileUtils.copyFile(source, destination);
 	}
 
@@ -336,7 +336,7 @@ public class BaseClass {
 //DATADRIVEN(EXCEL)	
 
 	public static String readParticularcell(String bookName, String sheetName, int r, int c) throws IOException {
-		File f = new File("C:\\Users\\JUJU\\eclipse-workspace\\CucumberTask\\WorkBook\\" + bookName + ".xlsx");
+		File f = new File(System.getProperty("user.dir")+"\\WorkBook\\" + bookName + ".xlsx");
 		FileInputStream fis = new FileInputStream(f);
 		Workbook book = new XSSFWorkbook(fis);
 		Sheet sheet = book.getSheet(sheetName);
@@ -359,7 +359,7 @@ public class BaseClass {
 	}
 
 	public static void readAllcell(String bookName, String sheetName) throws IOException {
-		File f = new File("C:\\Users\\JUJU\\eclipse-workspace\\CucumberTask\\WorkBook\\" + bookName + ".xlsx");
+		File f = new File(System.getProperty("user.dir")+"\\WorkBook\\" + bookName + ".xlsx");
 		FileInputStream fis = new FileInputStream(f);
 		Workbook book = new XSSFWorkbook(fis);
 		Sheet sheet = book.getSheet(sheetName);
@@ -390,7 +390,7 @@ public class BaseClass {
 	}
 
 	public static void readParticularRow(String bookName, String sheetName, int i) throws IOException {
-		File f = new File("C:\\Users\\JUJU\\eclipse-workspace\\CucumberTask\\WorkBook\\" + bookName + ".xlsx");
+		File f = new File(System.getProperty("user.dir")+"\\WorkBook\\" + bookName + ".xlsx");
 		FileInputStream fis = new FileInputStream(f);
 		Workbook book = new XSSFWorkbook(fis);
 		Sheet sheet = book.getSheet(sheetName);
@@ -422,7 +422,7 @@ public class BaseClass {
 	public static void createNewFileInExcel(String newFileName, String newSheetName, int r, int c, String dataInput)
 			throws IOException {
 
-		File f = new File("C:\\Users\\JUJU\\eclipse-workspace\\CucumberTask\\WorkBook\\" + newFileName + ".xlsx");
+		File f = new File(System.getProperty("user.dir")+"\\WorkBook\\" + newFileName + ".xlsx");
 		Workbook w = new XSSFWorkbook();
 		Sheet newSheet = w.createSheet(newSheetName);
 		Row newRow = newSheet.createRow(r);
@@ -436,7 +436,7 @@ public class BaseClass {
 	public static void createNewSheetInExcel(String fileName, String newSheetName, int r, int c, String dataInput)
 			throws IOException {
 
-		File f = new File("C:\\Users\\JUJU\\eclipse-workspace\\CucumberTask\\WorkBook\\" + fileName + ".xlsx");
+		File f = new File(System.getProperty("user.dir")+"\\WorkBook\\" + fileName + ".xlsx");
 		FileInputStream fis = new FileInputStream(f);
 		Workbook w = new XSSFWorkbook(fis);
 		Sheet newSheet = w.createSheet(newSheetName);
@@ -451,7 +451,7 @@ public class BaseClass {
 	public static void createNewRowInExcel(String fileName, String sheetName, int r, int c, String dataInput)
 			throws IOException {
 
-		File f = new File("C:\\Users\\JUJU\\eclipse-workspace\\CucumberTask\\WorkBook\\" + fileName + ".xlsx");
+		File f = new File(System.getProperty("user.dir")+"\\WorkBook\\" + fileName + ".xlsx");
 		FileInputStream fis = new FileInputStream(f);
 		Workbook w = new XSSFWorkbook(fis);
 		Sheet newSheet = w.getSheet(sheetName);
@@ -466,7 +466,7 @@ public class BaseClass {
 	public static void createNewCellInExcel(String fileName, String sheetName, int r, int c, String dataInput)
 			throws IOException {
 
-		File f = new File("C:\\Users\\JUJU\\eclipse-workspace\\CucumberTask\\WorkBook\\" + fileName + ".xlsx");
+		File f = new File(System.getProperty("user.dir")+"\\WorkBook\\" + fileName + ".xlsx");
 		FileInputStream fis = new FileInputStream(f);
 		Workbook w = new XSSFWorkbook(fis);
 		Sheet newSheet = w.getSheet(sheetName);
@@ -481,7 +481,7 @@ public class BaseClass {
 	public static void updateDataToExcel(String fileName, String sheetName, int r, int c, String checkData,
 			String newData) throws IOException {
 
-		File f = new File("C:\\Users\\JUJU\\eclipse-workspace\\CucumberTask\\WorkBook\\" + fileName + ".xlsx");
+		File f = new File(System.getProperty("user.dir")+"\\WorkBook\\" + fileName + ".xlsx");
 		FileInputStream fis = new FileInputStream(f);
 		Workbook w = new XSSFWorkbook(fis);
 		Sheet sheet = w.getSheet(sheetName);

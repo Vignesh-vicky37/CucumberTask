@@ -1,1 +1,0 @@
-file:src/test/resources/FBloginDetails.feature:3
