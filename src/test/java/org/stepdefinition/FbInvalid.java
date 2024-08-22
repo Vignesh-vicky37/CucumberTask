@@ -20,7 +20,8 @@ public class FbInvalid extends BaseClass {
 		fl = new FbLoginPage();
 		passTextTOWebElement(fl.getEmailTxtBox(), readParticularcell(bookName, sheetName, 2, 1));
 		
-		System.out.println("branch b1 added cnd commited");
+		System.out.println("branch b1 added and commited");
+		System.out.println("branch b3 added and commited");
 
 	}
 
